@@ -1,65 +1,61 @@
-# 🌟 Led Control with Unity & ESP8266
+# 🌟 LED Control with Unity & ESP8266
 
-## 🚀 Proje Hakkında
-Bu proje, **Unity** ve **ESP8266** kullanarak WiFi üzerinden LED kontrolü sağlamayı amaçlıyor! 🎮💡
+## 🚀 About the Project  
+This project aims to enable **WiFi-based LED control** using **Unity** and **ESP8266**! 🎮💡  
 
-Şu an **tam olarak çalışmıyor** (hatta birkaç hata var 🤦‍♂️), ancak bir **prototip** olarak düşünülebilir. ESP8266'ya bağlanarak LED'lerin rengini değiştirebiliyoruz ve Unity üzerinden kontrol edebiliyoruz. 🖥️📡✨
+Currently, it is **not fully functional** (and has a few bugs 🤦‍♂️), but it serves as a **prototype**. We can connect to the ESP8266 and change LED colors via Unity. 🖥️📡✨  
 
-## 📂 Proje Yapısı
+## Language Options 🌍
+- [Türkçe (Readme)](readme.tr.md)
+- [English (Readme)](readme.md)
+
+## 📂 Project Structure  
 
 ```
 /LedControlProject
-    /Autumnoon_UnityApp   -> Unity projesi
-    /ESP8266_Firmware     -> ESP8266 kodları
-    /assets               -> Görseller ve GIF'ler
-    README.md             -> Bu dosya 😄
+    /Autumnoon_UnityApp   -> Unity project (not uploaded due to large file size)
+    /ESP8266_Firmware     -> ESP8266 code
+    /assets               -> Images and GIFs
 ```
 
-### 🎮 Autumnoon_UnityApp
-Bu klasör, **Unity uygulamamızı** içeriyor. Uygulama aracılığıyla ESP8266'ya bağlanıp LED'leri kontrol edebiliyoruz. Renk seçimi, bağlantı işlemleri ve temel UI burada bulunuyor. 
+### 🎮 Autumnoon_UnityApp  
+This folder contains the **Unity application**. Through the app, we can connect to the ESP8266 and control LEDs. It includes features like color selection, connection handling, and a basic UI.  
+
+However, **due to the large file size, the Unity project is not uploaded at the moment.** If you wish to access the Unity project, please contact me.
+
+### 🔧 ESP8266_Firmware  
+This folder contains **firmware for the ESP8266**. Each file serves a different purpose:
+
+- **`main.ino`** → The main file that defines the core functionality of ESP8266. 📜  
+- **`wifiunitycontrol.h`** → Manages the WiFi connection between Unity and ESP. 📡  
+- **`ledanimationscontrol.h`** → Handles LED animations. 🌈✨  
+- **`lauraanimationlibrary.h`** → A custom library for LED effects. 🏗️  
+
+### 🎨 User Interface  
+Here are some GIFs showcasing the connection and main screens:  
 
 <div align="center">
-    <img src="assets/img/homescreen.png" alt="Ana Ekran" width="800">
+  <table style="margin: auto;">
+    <tr>
+      <td><img src="assets/gif/connect_screen.gif" alt="Bağlantı Ekranı" width="300"></td>
+      <td style="width: 150px;"></td> 
+      <td><img src="assets/gif/home_screen.gif" alt="Ana Ekran" width="300"></td>
+    </tr>
+  </table>
 </div>
 
-### 🔧 ESP8266_Firmware
-Bu klasör, **ESP8266 için yazılmış firmware** dosyalarını içeriyor. Burada, her dosyanın farklı bir görevi var:
-
-- **`main.ino`** → ESP8266'nın temel çalışma mantığını içeren ana dosya. 📜
-- **`wifiunitycontrol.h`** → Unity ile ESP arasındaki WiFi bağlantısını yönetiyor. 📡
-- **`ledanimationscontrol.h`** → LED animasyonlarını kontrol eden kodları içeriyor. 🌈✨
-- **`lauraanimationlibrary.h`** → LED efektleri için yazılmış özel bir kütüphane. 🏗️
-
-### 🎨 Kullanıcı Arayüzü
-Bağlantı ekranı ve ana ekranın nasıl göründüğüne dair bazı GIF'ler aşağıda:
+### 📌 Additional Images  
 
 <div align="center">
-    <img src="assets/gif/connect_screen.gif" alt="Bağlantı Ekranı" width="300"  style="margin-right: 150px;">
-    <img src="assets/gif/home_screen.gif" alt="Ana Ekran" width="300">
+    <img src="assets/img/animasyonekranı.png" alt="Animation Screen" width="417.5" style="margin-right: 10px;">
+    <img src="assets/img/kayıtekranı.png" alt="Registration Screen" width="383.3" style="margin-right: 10px;">
+    <img src="assets/img/setupekranı.png" alt="Setup Screen" width="399.1">
 </div>
 
-### 📌 Diğer Görseller
+## ⚠️ Current Status  
+✅ We can connect to the ESP8266.  
+❌ Not stable—connection issues occur sometimes.  
+❌ Needs code improvements and debugging.  
 
-<div align="center">
-    <img src="assets/img/animasyonekranı.png" alt="Animasyon Ekranı" width="417,5" style="margin-right: 10px;">
-    <img src="assets/img/kayıtekranı.png" alt="Kayıt Ekranı" width="383,3" style="margin-right: 10px;">
-    <img src="assets/img/setupekranı.png" alt="Kurulum Ekranı" width="399,1">
-</div>
-
-
-## ⚠️ Şu Anki Durum
-✅ ESP8266'ya bağlanabiliyoruz.  
-✅ LED’leri **kontrol edebiliyoruz** (ama bazen çalışmıyor 😅).  
-❌ Stabil değil, bazen bağlantı sorunları yaşanıyor.  
-❌ Kodların iyileştirilmesi ve hata ayıklama yapılması gerekiyor.  
-
-## 📌 Gelecekte Neler Yapılabilir?
-- Daha stabil bir bağlantı sistemi oluşturulabilir. 🛠️
-- Unity tarafındaki UI geliştirilebilir. 🎨
-- Daha fazla LED animasyonu eklenebilir. 🎆
-
-Bu projeyi geliştirmek isteyenler için kapımız açık! 👐 PR’larınızı bekliyoruz. 🚀
-
----
-✨ **Eğlenceli kodlamalar!** 💻💡
-
+## 📂 Autumnoon_UnityApp Download Notes  
+Due to the large file size, the Unity project is not currently uploaded. If you want to access **Autumnoon_UnityApp**, please contact me.

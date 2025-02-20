@@ -5,22 +5,23 @@ Bu proje, **Unity** ve **ESP8266** kullanarak WiFi üzerinden LED kontrolü sağ
 
 Şu an **tam olarak çalışmıyor** (hatta birkaç hata var 🤦‍♂️), ancak bir **prototip** olarak düşünülebilir. ESP8266'ya bağlanarak LED'lerin rengini değiştirebiliyoruz ve Unity üzerinden kontrol edebiliyoruz. 🖥️📡✨
 
+## Dil Seçenekleri 🌍
+- [Türkçe (Readme)](readme.tr.md)
+- [English (Readme)](readme.md)
+
 ## 📂 Proje Yapısı
 
 ```
 /LedControlProject
-    /Autumnoon_UnityApp   -> Unity projesi
+    /Autumnoon_UnityApp   -> Unity projesi (yüklenmedi, boyut çok büyük)
     /ESP8266_Firmware     -> ESP8266 kodları
     /assets               -> Görseller ve GIF'ler
-    README.md             -> Bu dosya 😄
 ```
 
 ### 🎮 Autumnoon_UnityApp
-Bu klasör, **Unity uygulamamızı** içeriyor. Uygulama aracılığıyla ESP8266'ya bağlanıp LED'leri kontrol edebiliyoruz. Renk seçimi, bağlantı işlemleri ve temel UI burada bulunuyor. 
+Bu klasör, **Unity uygulamamızı** içeriyor. Uygulama aracılığıyla ESP8266'ya bağlanıp LED'leri kontrol edebiliyoruz. Renk seçimi, bağlantı işlemleri ve temel UI burada bulunuyor. Ancak, **Unity projesinin dosya boyutu çok büyük olduğu için şu an bu dosya yüklenememektedir.** Eğer Unity projesini edinmek isterseniz, benimle iletişime geçebilirsiniz.
 
-<div align="center">
-    <img src="assets/img/homescreen.png" alt="Ana Ekran" width="800">
-</div>
+
 
 ### 🔧 ESP8266_Firmware
 Bu klasör, **ESP8266 için yazılmış firmware** dosyalarını içeriyor. Burada, her dosyanın farklı bir görevi var:
@@ -34,9 +35,16 @@ Bu klasör, **ESP8266 için yazılmış firmware** dosyalarını içeriyor. Bura
 Bağlantı ekranı ve ana ekranın nasıl göründüğüne dair bazı GIF'ler aşağıda:
 
 <div align="center">
-    <img src="assets/gif/connect_screen.gif" alt="Bağlantı Ekranı" width="300"  style="margin-right: 150px;">
-    <img src="assets/gif/home_screen.gif" alt="Ana Ekran" width="300">
+  <table style="margin: auto;">
+    <tr>
+      <td><img src="assets/gif/connect_screen.gif" alt="Bağlantı Ekranı" width="300"></td>
+      <td style="width: 150px;"></td> 
+      <td><img src="assets/gif/home_screen.gif" alt="Ana Ekran" width="300"></td>
+    </tr>
+  </table>
 </div>
+
+
 
 ### 📌 Diğer Görseller
 
@@ -46,20 +54,11 @@ Bağlantı ekranı ve ana ekranın nasıl göründüğüne dair bazı GIF'ler a�
     <img src="assets/img/setupekranı.png" alt="Kurulum Ekranı" width="399,1">
 </div>
 
-
 ## ⚠️ Şu Anki Durum
 ✅ ESP8266'ya bağlanabiliyoruz.  
-✅ LED’leri **kontrol edebiliyoruz** (ama bazen çalışmıyor 😅).  
 ❌ Stabil değil, bazen bağlantı sorunları yaşanıyor.  
 ❌ Kodların iyileştirilmesi ve hata ayıklama yapılması gerekiyor.  
 
-## 📌 Gelecekte Neler Yapılabilir?
-- Daha stabil bir bağlantı sistemi oluşturulabilir. 🛠️
-- Unity tarafındaki UI geliştirilebilir. 🎨
-- Daha fazla LED animasyonu eklenebilir. 🎆
+## 📂 Autumnoon_UnityApp Yükleme Notları
 
-Bu projeyi geliştirmek isteyenler için kapımız açık! 👐 PR’larınızı bekliyoruz. 🚀
-
----
-✨ **Eğlenceli kodlamalar!** 💻💡
-
+Unity projesi büyük dosya boyutları nedeniyle şu an yüklenememektedir. Eğer **Autumnoon_UnityApp**'i edinmek isterseniz, lütfen benimle iletişime geçin.
